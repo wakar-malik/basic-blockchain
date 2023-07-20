@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("./assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("./assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-ExtraBold;
+  src: url("./assets/fonts/Poppins/Poppins-ExtraBold.ttf");
+}
+
+:root {
+  --white: #fff;
+  --blue: #3664f6;
+  --gray: #a0a4b9;
+  --width: 70%;
+  --marginAuto: auto;
+}
+
+/* navbar css */
+.blockchain-navbar {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: var(--width);
+  margin: var(--marginAuto);
+  padding: 30px 0;
+}
+
+.blockchain-navbar > .blockchain-logo__container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: start;
+  align-items: center;
+}
+
+.blockchain-navbar > .blockchain-logo__container > .logo-img {
+  width: 45px;
+  height: 45px;
+}
+
+.blockchain-navbar > .blockchain-logo__container > h1 {
+  margin-left: 30px;
+  font-family: Poppins-ExtraBold;
+  color: var(--gray);
+}
+
+.blockchain-navbar > .nav-items__container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blockchain-navbar > .nav-items__container > .nav-items_list {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  list-style-type: none;
+}
+
+.blockchain-navbar > .nav-items__container > .nav-items_list > .nav-items {
+  padding: 8px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--gray);
+  font-family: Poppins-SemiBold;
+}
+
+.blockchain-navbar > .nav-items__container > .nav-buttons__container > button {
+  border: none;
+  border-radius: 30px;
+  padding: 6px 30px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Poppins-SemiBold;
+}
+
+.blockchain-navbar
+  > .nav-items__container
+  > .nav-buttons__container
+  > button:nth-child(1) {
+  margin-right: 20px;
+}
+
+.blockchain-navbar > .menu-icon__container {
+  display: none;
+}
+
+.blockchain-navbar > .menu-icon__container > .menu-icon {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .blockchain-navbar {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .blockchain-navbar > .nav-items__container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: #ededed;
+    grid-template-columns: auto;
+    justify-content: flex-end;
+  }
+
+  .blockchain-navbar > .nav-items__container > .nav-items_list {
+    grid-template-columns: auto;
+    justify-content: flex-end;
+  }
+
+  .blockchain-navbar > .nav-items__container__active {
+    display: none;
+  }
+
+  .blockchain-navbar > .nav-items__container > .nav-items_list > .nav-items {
+    text-align: right;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .blockchain-navbar > .menu-icon__container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .blockchain-navbar {
+    width: 95%;
+  }
+}
+/* navbar css */
