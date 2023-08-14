@@ -1,0 +1,46 @@
+@import "./global.css";
+.cardCreate {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  margin: auto;
+}
+.cardCreate > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 20%;
+  height: 80%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  align-items: center;
+}
+h3 {
+  text-align: center;
+  margin: 0;
+  color: rgb(8, 8, 116);
+}
+p {
+  text-align: center;
+  margin: 0;
+  opacity: 0.5;
+}
+@media (max-width: 520px) {
+  .cardCreate {
+    flex-wrap: wrap;
+  }
+  .cardCreate > div {
+    width:70%;
+    margin: 10px auto;
+  }
+}
+@media all and (min-width: 521px) and (max-width:760px){
+  .cardCreate {
+    flex-wrap: wrap;
+  }
+  .cardCreate > div {
+    width:40%;
+    margin: 10px auto;
+  }
+
+}
