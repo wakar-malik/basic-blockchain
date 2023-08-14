@@ -1,37 +1,9 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
-@font-face {
-  font-family: Poppins-Regular;
-  src: url("./assets/fonts/Poppins/Poppins-Regular.ttf");
-}
-
-@font-face {
-  font-family: Poppins-SemiBold;
-  src: url("./assets/fonts/Poppins/Poppins-SemiBold.ttf");
-}
-
-@font-face {
-  font-family: Poppins-ExtraBold;
-  src: url("./assets/fonts/Poppins/Poppins-ExtraBold.ttf");
-}
-
-:root {
-  --white: #fff;
-  --blue: #3664f6;
-  --gray: #a0a4b9;
-  --width: 70%;
-  --marginAuto: auto;
-}
+@import "./global.css";
 
 /* navbar css */
 .blockchain-navbar {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  width: var(--width);
-  margin: var(--marginAuto);
   padding: 30px 0;
 }
 
@@ -49,8 +21,8 @@
 
 .blockchain-navbar > .blockchain-logo__container > h1 {
   margin-left: 30px;
-  font-family: Poppins-ExtraBold;
   color: var(--gray);
+  font-family: Poppins-ExtraBold;
 }
 
 .blockchain-navbar > .nav-items__container {
@@ -106,6 +78,7 @@
     grid-template-columns: auto auto;
     justify-content: space-between;
     position: relative;
+    align-items: center;
   }
 
   .blockchain-navbar > .nav-items__container {
@@ -139,9 +112,4 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .blockchain-navbar {
-    width: 95%;
-  }
-}
 /* navbar css */
