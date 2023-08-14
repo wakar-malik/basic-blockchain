@@ -55,6 +55,12 @@
   font-size: 18px;
   font-weight: 700;
   font-family: Poppins-SemiBold;
+  transition: all 0.5s ease;
+}
+.blockchain-navbar > .nav-items__container > .nav-buttons__container > button:hover{
+  background-color: var(--white);
+  color: var(--blue);
+  cursor: pointer;
 }
 
 .blockchain-navbar
