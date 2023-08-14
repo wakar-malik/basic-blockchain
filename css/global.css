@@ -23,9 +23,13 @@
   --white: #fff;
   --blue: #3664f6;
   --gray: #a0a4b9;
+  --lightBlack: #152764;
   --width: 70%;
   --widthMd: 95%;
   --marginAuto: auto;
+  --poppinsExtra: Poppins-ExtraBold;
+  --poppinsSemi: Poppins-SemiBold;
+  --poppinsRegular: Poppins-Regular;
 }
 
 .globalContainer {
