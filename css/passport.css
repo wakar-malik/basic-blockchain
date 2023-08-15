@@ -1,19 +1,20 @@
 @import "./global.css";
 
 .passportBox{
+    width: var(--width);
+    height: 300px;
     display: flex;
     justify-content: space-between;
-    align-items: start;
-    margin: auto;
+    align-items: center;
+    margin: 5rem auto;
     width: var(--width);
-    padding-right: 8rem;
-    padding-top: 2rem;
+    padding-right: 3rem;
 }
 .passportBox > .passportLeft{
-    width: 60%;
+    width: 70%;
 }
 .passportLeft > h2{
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     letter-spacing: 1px;
     color: var(--blue);
     margin-bottom: 1rem;
@@ -23,9 +24,12 @@
     opacity: 0.8;
     color: gray;
     font-family: var(--poppinsSemi);
+    text-align: start;
+    letter-spacing: 1px;
 }
 .passportRight > img{
-    border-radius: 0.25rem;
+    border-radius: 0.30rem;
+    width: 320px;
 }
 
 @media screen and (max-width: 800px){

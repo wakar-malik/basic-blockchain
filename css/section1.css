@@ -1,9 +1,9 @@
 @import "./global.css";
 .cardCreate {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   height: 150px;
-  margin: auto;
+  margin: 3rem auto;
 }
 .cardCreate > div {
   display: flex;

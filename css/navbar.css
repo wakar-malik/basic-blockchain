@@ -51,11 +51,12 @@
   border-radius: 30px;
   padding: 6px 30px;
   background-color: var(--blue);
+  border:  2px solid var(--blue);
   color: var(--white);
   font-size: 18px;
   font-weight: 700;
   font-family: Poppins-SemiBold;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in;
 }
 .blockchain-navbar > .nav-items__container > .nav-buttons__container > button:hover{
   background-color: var(--white);
