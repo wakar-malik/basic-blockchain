@@ -1,46 +1,50 @@
 @import "./global.css";
 .cardCreate {
   display: flex;
-  justify-content: space-between;
-  height: 150px;
-  margin: 3rem auto;
+  justify-content: center;
+  height: 180px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
-.cardCreate > div {
+.cardSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
   width: 20%;
   height: 80%;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: white;
+  box-shadow: rgba(145, 153, 160, 0.2) 0px 8px 24px;
   align-items: center;
 }
-h3 {
+.headingTitle {
   text-align: center;
   margin: 0;
   color: rgb(8, 8, 116);
+  font-size: 22px;
 }
-p {
+.paraTitle {
   text-align: center;
   margin: 0;
   opacity: 0.5;
+  color: rgb(8, 8, 116);
+  font-size: 14px;
 }
 @media (max-width: 520px) {
   .cardCreate {
     flex-wrap: wrap;
   }
-  .cardCreate > div {
-    width:70%;
+  .cardSection {
+    width: 70%;
     margin: 10px auto;
   }
 }
-@media all and (min-width: 521px) and (max-width:760px){
+@media all and (min-width: 521px) and (max-width: 760px) {
   .cardCreate {
     flex-wrap: wrap;
   }
-  .cardCreate > div {
-    width:40%;
+  .cardSection {
+    width: 40%;
     margin: 10px auto;
   }
-
 }
