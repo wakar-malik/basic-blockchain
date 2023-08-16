@@ -1,0 +1,54 @@
+@import  "./global.css";
+.futureFinance {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:6rem ;
+    margin-bottom: 6rem;
+  }
+  .headArea {
+    text-align: center;
+    color: rgb(4, 4, 109);
+    margin: 0;
+    font-size: 40px;
+    font-family: Poppins-SemiBold;
+  }
+  .Para {
+    text-align: center;
+    opacity: 0.5;
+    font-size: 12px;
+    font-family: Poppins-SemiBold;
+  }
+  .btn {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 30px;
+    width: 18%;
+    font-family: Poppins-SemiBold;
+    transition: all 0.5s ease-in;
+  }
+  .forButton {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin: 0;
+  }
+  .btn:hover {
+    background-color: white;
+    border: 1px solid blue;
+    color: blue;
+  }
+  @media (max-width: 768px) {
+    .futureSection {
+      width: 80%;
+    }
+    .btn {
+      width: 30%;
+    }
+  }
