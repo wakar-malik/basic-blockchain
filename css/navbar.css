@@ -46,19 +46,20 @@
   font-family: Poppins-SemiBold;
 }
 
-.blockchain-navbar > .nav-items__container > .nav-buttons__container > button {
+.blockchain-navbar > .nav-items__container > .nav-buttons__container > a {
   border: none;
   border-radius: 30px;
   padding: 6px 30px;
   background-color: var(--blue);
-  border:  2px solid var(--blue);
+  border: 2px solid var(--blue);
   color: var(--white);
   font-size: 18px;
   font-weight: 700;
   font-family: Poppins-SemiBold;
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
+  text-decoration: none;
 }
-.blockchain-navbar > .nav-items__container > .nav-buttons__container > button:hover{
+.blockchain-navbar > .nav-items__container > .nav-buttons__container > a:hover {
   background-color: var(--white);
   color: var(--blue);
   cursor: pointer;
@@ -67,7 +68,7 @@
 .blockchain-navbar
   > .nav-items__container
   > .nav-buttons__container
-  > button:nth-child(1) {
+  > a:nth-child(1) {
   margin-right: 20px;
 }
 
